@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 function getEnvironmentVariable(key, suffix, fallbackValue) {
   const value = process.env[key + suffix];
   if (value !== undefined) return value;
